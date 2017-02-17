@@ -118,7 +118,6 @@ tap "homebrew/services"
 brew "ctags"
 brew "git"
 brew "openssl"
-brew "rcm"
 brew "reattach-to-user-namespace"
 brew "zsh"
 
@@ -131,9 +130,6 @@ brew "hub"
 
 # Image manipulation
 brew "imagemagick"
-
-# Testing
-brew "qt"
 
 # Programming languages
 brew "libyaml" # should come after openssl
@@ -150,10 +146,10 @@ brew install homebrew/versions/postgresql95
 
 fancy_echo "Configuring Ruby ..."
 find_latest_ruby() {
-  rbenv install -l | grep -v - | tail -1 | sed -e 's/^ *//'
+  rbenv install 2.2.3
 }
 
-ruby_version="$(find_latest_ruby)"
+ruby_version="2.2.3"
 # shellcheck disable=SC2016
 append_to_zshrc 'eval "$(rbenv init - --no-rehash)"' 1
 eval "$(rbenv init -)"
