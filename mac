@@ -120,9 +120,6 @@ brew "git"
 brew "openssl"
 brew "rcm"
 brew "reattach-to-user-namespace"
-brew "the_silver_searcher"
-brew "tmux"
-brew "vim"
 brew "zsh"
 
 # Heroku
@@ -145,9 +142,11 @@ brew "rbenv"
 brew "ruby-build"
 
 # Databases
-brew "postgres", restart_service: true
 brew "redis", restart_service: true
 EOF
+
+fancy_echo "Installing postgresq ..."
+brew install homebrew/versions/postgresql95
 
 fancy_echo "Configuring Ruby ..."
 find_latest_ruby() {
