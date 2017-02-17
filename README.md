@@ -58,9 +58,6 @@ Unix tools:
 * [Exuberant Ctags] for indexing files for vim tab completion
 * [Git] for version control
 * [OpenSSL] for Transport Layer Security (TLS)
-* [RCM] for managing company and personal dotfiles
-* [The Silver Searcher] for finding things in files
-* [Tmux] for saving project state and switching between projects
 * [Zsh] as your shell
 
 [Exuberant Ctags]: http://ctags.sourceforge.net/
@@ -87,12 +84,6 @@ GitHub tools:
 Image tools:
 
 * [ImageMagick] for cropping and resizing images
-
-Testing tools:
-
-* [Qt] for headless JavaScript testing via Capybara Webkit
-
-[Qt]: http://qt-project.org/
 
 Programming languages and configuration:
 
