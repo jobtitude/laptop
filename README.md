@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/jobtitude/laptop.svg?branch=master)](https://travis-ci.org/jobtitude/laptop)
 Laptop
 ======
 
