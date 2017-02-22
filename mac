@@ -134,7 +134,6 @@ brew "imagemagick"
 
 # Programming languages
 brew "libyaml" # should come after openssl
-brew "node"
 brew "rbenv"
 brew "ruby-build"
 
@@ -144,6 +143,9 @@ EOF
 
 fancy_echo "Installing postgresq ..."
 brew install homebrew/versions/postgresql95
+
+fancy_echo "Installing node ..."
+brew install node@0.10
 
 fancy_echo "Configuring Ruby ..."
 find_latest_ruby() {
