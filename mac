@@ -141,11 +141,11 @@ brew "ruby-build"
 brew "redis", restart_service: true
 EOF
 
-fancy_echo "Installing postgresq ..."
-brew install homebrew/versions/postgresql95
-
-fancy_echo "Installing node ..."
+fancy_echo "Installing node, n, gulp and bower ..."
 brew install node@0.10
+sudo npm install -g n
+sudo npm install gulp -g
+sudo npm install bower -g
 
 fancy_echo "Configuring Ruby ..."
 find_latest_ruby() {
