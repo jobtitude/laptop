@@ -146,6 +146,8 @@ brew install node@0.10
 sudo npm install -g n
 sudo npm install gulp -g
 sudo npm install bower -g
+sudo npm install cordova -g
+sudo npm install ionic -g
 
 fancy_echo "Configuring Ruby ..."
 find_latest_ruby() {
