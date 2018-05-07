@@ -142,12 +142,15 @@ brew "redis", restart_service: true
 EOF
 
 fancy_echo "Installing node, n, gulp and bower ..."
+brew "nvm"
+nvm install node
+nvm install 0.12.18
+nvm install 9.8.0
+
 brew install node@0.10
 sudo npm install -g n
 sudo npm install gulp -g
 sudo npm install bower -g
-sudo npm install cordova -g
-sudo npm install ionic -g
 sudo npm install firebase-tools -g
 
 fancy_echo "Configuring Ruby ..."
